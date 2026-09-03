@@ -1,5 +1,22 @@
 # Go-Psuedoterminal
 ## Project Report
+### Implemented Commands
+| Command | Options |
+| ------- | ------- | 
+| cat     |
+| cd      |
+| echo    |
+| exit    |
+| grep    |
+| history |
+| ls      |
+| mkdir   |
+| pwd     |
+| rm      |
+| rmdir   |
+| stat    |
+| touch   |
+
 ### Design Overview: 
 One of the first things that happens when the program is executed is the registration of commands. All commands are registered in a map from the command string to an commandFunc. This map is a part of the dispatcher struct, which is how commands are actually run. The command function is the actual function that runs when the command string is typed into the terminal. For a command to be executed, it must be in the command map. 
 
@@ -12,7 +29,3 @@ Finally, shell state is managed by using a state interface that the shell implem
 With  extensive testing, I was unable to find anything that didn't work, but bugs may be inevitable. Additionally, there are some things that maybe could have been implemented that weren't. For example, Unix has many more commands than what has been implemented. I could also implement input parsing for escape characters.
 ### Build & Run: 
 The project has been compiled into the goshell executable, which can be ran in a linux terminal with ./goshell. 
-
-### Sample Session: 
-Below is an image that shows a sample session. 
-![Demo](images/demo.png)
