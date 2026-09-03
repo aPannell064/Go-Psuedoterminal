@@ -1,5 +1,4 @@
 # Go-Psuedoterminal
-## Adam Pannell
 ## Project Report
 ### Design Overview: 
 One of the first things that happens when the program is executed is the registration of commands. All commands are registered in a map from the command string to an commandFunc. This map is a part of the dispatcher struct, which is how commands are actually run. The command function is the actual function that runs when the command string is typed into the terminal. For a command to be executed, it must be in the command map. 
