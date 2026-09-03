@@ -17,6 +17,3 @@ The project has been compiled into the goshell executable, which can be ran in a
 ### Sample Session: 
 Below is an image that shows a sample session. 
 ![Demo](images/demo.png)
-
-I also have an example of history, which I didn't include in the previous example because of how much data there was already. 
-![History](images/history.png)
